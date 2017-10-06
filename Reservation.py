@@ -2,16 +2,20 @@ class Reservation:
 
     def set_position(self, position):
         """
-        :param position:
-        :return: sets position details
+        set the position index to be reserved
+        
+        :param position: <str> new position location
+        :return: <str> The new position index of an entry
         """
         self.position = position
 
     def position_reset(self):
         """
-        :return: zero position
+        This resets the position index. May be deprecated
+        
+        :return: <str> zero index position
         """
-        self._position(0)
+        self.set_position(0)
 
     def set_username(self, name):
         self.username = name
