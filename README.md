@@ -15,3 +15,8 @@ The underlying idea of a scheduler is an admittedly straight-forward task.  I ch
 Lastly, I want to make sure I adhere to the [PEP8](https://www.python.org/dev/peps/pep-0008/) style guide to demonstrate compentency at the professional level.
 
 As I develop this application I will upload issues I had to overcome, and how I overcame them.  I will also add renderings of my interface when I reach the point of generating them.
+
+#### Development Notes
+
+* Login Screen:
+  + The login screen will be a fixed, borderless, non-scalable rectangular screen with a background texture.  I aim to create a professional interface on application start-up
