@@ -1,7 +1,8 @@
 # Scheduler
+***
 ### Kivy Based Application for Scheduling Machine Space
 ### 
--------------------------------------
+***
 #### Objective
 
 There is a common-use instrument that is currently being scheduled using a shared Google Drive.  There is always confusion about how to properly read the color coded system.  To remedy this, I will create a Kivy based application that will handle the scheduling in a more intuitive, graphics-based approach.
@@ -20,3 +21,4 @@ As I develop this application I will upload issues I had to overcome, and how I 
 
 * Login Screen:
   + The login screen will be a fixed, borderless, non-scalable rectangular screen with a background texture.  I aim to create a professional interface on application start-up
+  + In my initial handling of this task, I became aware of an important design concept: [Separation of Concerns (SoC)](https://en.wikipedia.org/wiki/Separation_of_concerns).  This concept states that applications should be constructed in a modular format such that development and maintenance of the program are efficiently managed.  SoC is achieved via OOP because information can be encapsulated in classes, with information being with hidden or available as necessary to outside classes.  SoC will be considered in my project by separating the code into a Python-based program and a [KV-based](https://kivy.org/docs/guide/lang.html) program for GUI; visual components will be constructed via KV and the functionality will be implemented via Python, thus ensuring modularity. _note_: I recognize that KV is compiled through Python, so it effectively functions as the same language but the purpose of SoC is only for the components of a program to be modular.  Alternatively, I could achieve SoC using only pure Python by separating functionality and GUI into separate python classes by importing modules such as `Config`, `Window`, & `Canvas`.
